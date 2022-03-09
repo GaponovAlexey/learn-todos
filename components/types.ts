@@ -3,5 +3,9 @@ export interface MyTypes {
   id: number
   title: string
   completed: boolean
-  splice?: any
+  map?: any
+  push?: any
+  unshift?: any
+  slice?: any
+  filter?: any
 }
