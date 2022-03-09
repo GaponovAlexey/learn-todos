@@ -3,9 +3,9 @@ import { counterSlice } from './reducer'
 
 export const store = configureStore({
   reducer: {
-    mySlice: counterSlice,
+    card: counterSlice,
   },
 })
 
-export type RootState = ReturnType<typeof store.getState>
+export type TypeRootState = ReturnType<typeof store.getState>
 export type AppDispatch = typeof store.dispatch
