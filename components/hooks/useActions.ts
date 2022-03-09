@@ -1,12 +1,12 @@
 import { bindActionCreators } from '@reduxjs/toolkit'
 import { useDispatch } from 'react-redux'
+import { allActions } from '../Redux/reducer'
 
-const allActions = {
-  
+const fullActions = {
+  ...allActions,
 }
-
 
 export const useActions = () => {
   const dispatch = useDispatch()
-  return bindActionCreators()
+  return bindActionCreators(fullActions, dispatch)
 }

@@ -2,7 +2,9 @@ import { configureStore } from '@reduxjs/toolkit'
 import { counterSlice } from './reducer'
 
 export const store = configureStore({
-  reducer: { card: counterSlice },
+  reducer: {
+    mySlice: counterSlice,
+  },
 })
 
 export type RootState = ReturnType<typeof store.getState>
